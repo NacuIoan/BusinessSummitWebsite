@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Custom theme tokens */
+@theme {
+  --color-accent: #F2500D;
+  --color-accent-light: #FFF5F0;
+  --color-accent-dark: #D14400;
+  --color-dark: #0A0A0A;
+  --color-dark-secondary: #1A1A1A;
+  --color-gray-light: #F5F5F5;
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base body styles */
+body {
+  margin: 0;
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom focus styles */
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

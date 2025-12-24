@@ -7,7 +7,7 @@ export const EVENT = {
     date: '2026-04-18',
     displayDate: 'April 18, 2026',
     ctaText: 'Reserve your seat',
-    tallyFormUrl: 'https://tally.so/r/XXXXXX',
+    tallyFormUrl: 'https://tally.so/r/ODlrjp',
 };
 
 // Speakers data
@@ -135,3 +135,11 @@ export const NAV_LINKS = [
     { label: 'Schedule', href: '#schedule' },
     { label: 'Organizers', href: '#organizers' },
 ];
+
+// Social media links - update these with your actual URLs
+export const SOCIAL_LINKS = {
+    facebook: 'https://facebook.com/businesssummit',
+    tiktok: 'https://tiktok.com/@businesssummit',
+    linkedin: 'https://linkedin.com/company/businesssummit',
+    instagram: 'https://instagram.com/businesssummit',
+};

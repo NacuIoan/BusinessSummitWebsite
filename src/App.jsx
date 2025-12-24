@@ -4,10 +4,11 @@ import Footer from './components/common/Footer';
 import Landing from './pages/Landing';
 import Register from './pages/Register';
 import BusinessClub from './pages/BusinessClub';
+import Terms from './pages/Terms';
 
 /**
  * Main App component with React Router
- * Routes: /, /register, /businessclub
+ * Routes: /, /register, /businessclub, /terms
  */
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/register" element={<Register />} />
             <Route path="/businessclub" element={<BusinessClub />} />
+            <Route path="/terms" element={<Terms />} />
           </Routes>
         </div>
         <Footer />

@@ -1,13 +1,14 @@
+import { Link } from 'react-router-dom';
 import { EVENT } from '../constants/event';
 
 /**
  * Register page with Tally form embed
  * - Fullscreen-like Tally form
- * - Minimal header
+ * - Minimal header (no global navbar)
  */
 export default function Register() {
     return (
-        <main className="min-h-screen bg-white pt-20">
+        <main className="min-h-screen bg-white">
             {/* Minimal Header */}
             <div className="bg-dark py-6">
                 <div className="max-w-7xl mx-auto px-4 text-center">
@@ -37,18 +38,28 @@ export default function Register() {
 
             {/* Fallback Link - fixed at bottom */}
             <div className="bg-gray-light py-3 text-center border-t border-gray-200">
-                <a
-                    href={EVENT.tallyFormUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-accent text-sm font-medium hover:underline"
-                >
-                    Open form in new tab
-                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
-                    </svg>
-                </a>
+                <div className="flex flex-wrap justify-center items-center gap-4">
+                    <a
+                        href={EVENT.tallyFormUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-accent text-sm font-medium hover:underline"
+                    >
+                        Open form in new tab
+                        <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                        </svg>
+                    </a>
+                    <span className="text-gray-300">|</span>
+                    <Link
+                        to="/"
+                        className="inline-flex items-center gap-2 text-accent text-sm font-medium hover:underline"
+                    >
+                        ← Back Home
+                    </Link>
+                </div>
             </div>
         </main>
     );
 }
+

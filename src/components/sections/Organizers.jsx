@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logoBC from '../../assets/logo-bc.svg';
 
 /**
  * Organizers section
@@ -24,8 +25,8 @@ export default function Organizers() {
                         to="/businessclub"
                         className="group flex flex-col items-center gap-4 p-6 rounded-2xl hover:bg-white transition-colors"
                     >
-                        <div className="w-24 h-24 bg-dark rounded-2xl flex items-center justify-center group-hover:bg-accent transition-colors">
-                            <span className="text-2xl font-bold text-white">BC</span>
+                        <div className="w-24 h-24">
+                            <img src={logoBC} alt="Business Club" className="w-full h-full object-contain" />
                         </div>
                         <div className="text-center">
                             <h3 className="text-lg font-semibold text-gray-900 group-hover:text-accent transition-colors">

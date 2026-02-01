@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import CTAButton from '../components/common/CTAButton';
 import { EVENT } from '../constants/event';
+import logoBC from '../assets/logo-bc.svg';
 
 /**
  * BusinessClub page - About the organizers
@@ -10,20 +12,24 @@ import { EVENT } from '../constants/event';
  * - CTA to register
  */
 export default function BusinessClub() {
+    // Scroll to top on mount
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
-        <main className="min-h-screen bg-white pt-24">
+        <main className="min-h-screen bg-white">
             {/* Hero section */}
-            <section className="bg-dark py-16 md:py-24">
+            <section className="bg-dark pt-24 md:pt-28 pb-16 md:pb-24">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <div className="w-24 h-24 mx-auto mb-6 bg-accent rounded-2xl flex items-center justify-center">
-                        <span className="text-3xl font-bold text-white">BC</span>
+                    <div className="w-24 h-24 mx-auto mb-6">
+                        <img src={logoBC} alt="Business Club" className="w-full h-full object-contain" />
                     </div>
                     <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
                         Business Club
                     </h1>
                     <p className="text-xl text-gray-400">
-                        Empowering entrepreneurs and leaders to shape the future
-                    </p>
+                        Empowering entrepreneurs and future business leaders                    </p>
                 </div>
             </section>
 
@@ -32,51 +38,53 @@ export default function BusinessClub() {
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="prose prose-lg max-w-none">
                         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                            Our Mission
+                        Our Mission
                         </h2>
+
                         <p className="text-gray-600 leading-relaxed mb-6">
-                            Business Club is a thriving community of entrepreneurs, executives, and innovators
-                            dedicated to fostering meaningful connections and driving business excellence.
-                            Founded with the vision of creating a platform where ambitious professionals can
-                            learn, grow, and collaborate, we have become the leading business network in the region.
+                        Business Club is the place where ambition meets the real world. Our mission is to take
+                        high-potential people and give them the discipline, the mentors, and the mindset they
+                        need to actually build something that matters.
                         </p>
 
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 mt-12">
-                            Why We Created Business Summit
-                        </h2>
-                        <p className="text-gray-600 leading-relaxed mb-6">
-                            {EVENT.name} was born from our community&apos;s desire for a premium,
-                            in-person experience that brings together the brightest minds in business.
-                            After years of successful networking events and workshops, we recognized the need
-                            for a flagship annual conference that would:
+                        <p className="text-gray-600 leading-relaxed mb-12">
+                        We are the bridge between having an idea and knowing how to execute it. In 2026, we don’t
+                        just talk about business, we make it happen through hard work and real results.
                         </p>
-                        <ul className="text-gray-600 space-y-3 mb-6">
-                            <li className="flex items-start gap-3">
-                                <span className="text-accent font-bold">•</span>
-                                Showcase thought leadership and cutting-edge business strategies
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="text-accent font-bold">•</span>
-                                Create high-value networking opportunities for our members
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="text-accent font-bold">•</span>
-                                Inspire the next generation of business leaders
-                            </li>
-                            <li className="flex items-start gap-3">
-                                <span className="text-accent font-bold">•</span>
-                                Celebrate innovation and entrepreneurial spirit
-                            </li>
-                        </ul>
 
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 mt-12">
-                            Join Our Community
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                        Why We Created Business Summit
                         </h2>
+
+                        <p className="text-gray-600 leading-relaxed mb-6">
+                        We realized that inspiration alone isn’t enough. Most events offer ideas, but very few
+                        offer a clear path forward.
+                        </p>
+
+                        <p className="text-gray-600 leading-relaxed mb-6">
+                        We created Business Summit to bridge the gap between ambition and experience. Our goal is
+                        to provide a space where young professionals can learn directly from those who have
+                        already built and scaled successful businesses.
+                        </p>
+
+                        <p className="text-gray-600 leading-relaxed mb-12">
+                        The Summit is about more than networking; it’s about access to the right mindset. We are
+                        here to ensure that talent meets the guidance it needs to turn potential into real
+                        progress.
+                        </p>
+
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+                        Join Our Community
+                        </h2>
+
+                        <p className="text-gray-600 leading-relaxed mb-6">
+                        Admission to Business Club is highly selective and opens only once a year, every autumn.
+                        </p>
+
                         <p className="text-gray-600 leading-relaxed mb-8">
-                            Whether you&apos;re a seasoned executive or an aspiring entrepreneur,
-                            Business Club offers resources, connections, and opportunities to accelerate
-                            your professional journey. Join thousands of members who are already part of
-                            our growing community.
+                        We are looking for the next generation of student leaders. Don’t just watch the future
+                        happen, be part of the group that builds it. Seats are limited. Excellence is the only
+                        requirement.
                         </p>
                     </div>
 

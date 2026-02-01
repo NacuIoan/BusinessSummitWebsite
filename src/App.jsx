@@ -5,10 +5,11 @@ import Landing from './pages/Landing';
 import Register from './pages/Register';
 import BusinessClub from './pages/BusinessClub';
 import Terms from './pages/Terms';
+import FAQ from './pages/FAQ';
 
 /**
  * Main App component with React Router
- * Routes: /, /register, /businessclub, /terms
+ * Routes: /, /register, /businessclub, /terms, /faq
  */
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/businessclub" element={<BusinessClub />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/faq" element={<FAQ />} />
           </Routes>
         </div>
         <Footer />

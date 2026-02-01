@@ -49,77 +49,86 @@ export const SPEAKERS = [
 // Schedule data
 export const SCHEDULE = [
     {
-        time: '8:00 AM - 9:00 AM',
-        title: 'Registration & Networking Breakfast',
-        description: 'Check-in, pick up your badge, and connect with fellow attendees over coffee.',
+        time: '11:00 - 12:00',
+        title: 'Registration',
+        description:
+            'Check-in, pick up your bracelet, and connect with fellow attendees over coffee.',
         tags: ['Networking'],
     },
     {
-        time: '9:00 AM - 9:30 AM',
-        title: 'Opening Keynote: The Future of Business',
-        description: 'Setting the stage for a day of innovation, insights, and inspiration.',
-        tags: ['Keynote'],
+        time: '12:30 - 13:20',
+        title: 'Opening Panel: AI in Action',
+        description:
+            'Move beyond the buzzwords to see how AI actually works in practice.',
+        tags: ['Panel', 'AI'],
     },
     {
-        time: '9:45 AM - 10:45 AM',
-        title: 'Panel: Digital Transformation in 2026',
-        description: 'Industry leaders discuss the latest trends shaping the digital landscape.',
-        tags: ['Panel', 'Technology'],
+        time: '13:20 - 13:35',
+        title: 'Keynote: Agents over Employees',
+        description:
+            'Learn how to build and manage an entire department using specialized AI agents.',
+    tags: ['Keynote', 'AI'],
     },
     {
-        time: '11:00 AM - 12:00 PM',
-        title: 'Workshop: Strategic Leadership',
-        description: 'Hands-on session on developing leadership skills for the modern era.',
-        tags: ['Workshop', 'Leadership'],
+        time: '13:40 - 14:25',
+        title: '35 Points & Networking Lunch',
+        description: '',
+        tags: ['Networking', 'Lunch'],
     },
     {
-        time: '12:00 PM - 1:30 PM',
-        title: 'Networking Lunch',
-        description: 'Enjoy a curated lunch experience while building valuable connections.',
-        tags: ['Networking'],
+        time: '14:30 - 15:15',
+        title: 'Second Panel: Beyond the Culture',
+        description:
+            'Founders and investors share the raw truth about raising capital and scaling beyond the first round.',
+        tags: ['Panel', 'Growth', 'Investment'],
     },
     {
-        time: '1:30 PM - 2:30 PM',
-        title: 'Fireside Chat: Scaling Your Business',
-        description: 'An intimate conversation about growth strategies and overcoming challenges.',
-        tags: ['Fireside Chat', 'Growth'],
+        time: '15:15 - 15:30',
+        title: 'Keynote: Smart Scaling',
+        description:
+        'Join Termene.ro to see how real-world data can stress-test your business model before you spend a dime.',
+    tags: ['Keynote', 'Growth'],
     },
     {
-        time: '2:45 PM - 3:45 PM',
-        title: 'Panel: Innovation & Investment',
-        description: 'VCs and founders share insights on what makes a startup investment-ready.',
-        tags: ['Panel', 'Investment'],
+    time: '15:35 - 15:50',
+    title: 'Short Meetings: A Different Type of Networking',
+    description:
+        'Rotational networking designed to help you meet as many relevant people as possible in 15 minutes.',
+    tags: ['Networking'],
     },
     {
-        time: '4:00 PM - 4:30 PM',
-        title: 'Closing Keynote & Awards',
-        description: 'Wrapping up with key takeaways and recognizing outstanding achievements.',
-        tags: ['Keynote'],
+        time: '15:55 - 17:00',
+        title: 'Late Night Business Talks',
+        description:
+            'Relaxed talks and untold stories. A fun segment to discover the human side of success and the failures that shaped it.',
+        tags: ['Talks', 'Community'],
     },
     {
-        time: '4:30 PM - 6:00 PM',
-        title: 'Cocktail Hour & Networking',
-        description: 'End the day with drinks, conversations, and new partnerships.',
-        tags: ['Networking'],
+        time: '17:00 - 17:10',
+        title: 'Closing Remarks',
+        description:
+            'A final thank you to the community and a brief word on the vision behind the Summit and what’s next.',
+    tags: ['Closing'],
     },
 ];
+
 
 // Why Attend features
 export const FEATURES = [
     {
         icon: 'target',
-        title: 'Strategic Insights',
-        description: 'Gain actionable strategies from industry leaders and market experts.',
+        title: 'The Clarity You need',
+        description: 'Get direct access to the playbooks of market experts. Understand what works in 2026 and how you can apply it to your own journey.',
     },
     {
         icon: 'users',
         title: 'Networking',
-        description: 'Connect with 500+ executives, entrepreneurs, and innovators.',
+        description: 'Connect with those who share your ambition and build the circle you need.',
     },
     {
         icon: 'lightbulb',
-        title: 'Innovation',
-        description: 'Discover cutting-edge technologies and emerging business trends.',
+        title: 'Perspective',
+        description: 'See where things are going. Get a clear look at how the world is changing and what it means for you.',
     },
     {
         icon: 'trending-up',

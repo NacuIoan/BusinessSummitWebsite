@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { EVENT } from '../constants/event';
 
@@ -5,6 +6,11 @@ import { EVENT } from '../constants/event';
  * Terms of Service page (Termeni și Condiții)
  */
 export default function Terms() {
+    // Scroll to top on mount
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <main className="min-h-screen bg-dark pt-24 pb-16">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

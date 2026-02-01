@@ -13,6 +13,12 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const location = useLocation();
     const isLandingPage = location.pathname === '/';
+    const isRegisterPage = location.pathname === '/register';
+
+    // Hide navbar on register page
+    if (isRegisterPage) {
+        return null;
+    }
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-sm border-b border-white/10">

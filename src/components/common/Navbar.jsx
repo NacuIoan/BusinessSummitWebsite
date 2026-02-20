@@ -35,16 +35,26 @@ export default function Navbar() {
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-8">
                         {isLandingPage ? (
-                            // Anchor links on landing page
-                            NAV_LINKS.map((link) => (
-                                <a
-                                    key={link.href}
-                                    href={link.href}
-                                    className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
-                                >
-                                    {link.label}
-                                </a>
-                            ))
+                            // Anchor links on landing page + route links
+                            NAV_LINKS.map((link) =>
+                                link.route ? (
+                                    <Link
+                                        key={link.href}
+                                        to={link.href}
+                                        className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
+                                    >
+                                        {link.label}
+                                    </Link>
+                                ) : (
+                                    <a
+                                        key={link.href}
+                                        href={link.href}
+                                        className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
+                                    >
+                                        {link.label}
+                                    </a>
+                                )
+                            )
                         ) : (
                             // Back to home on other pages
                             <Link
@@ -82,16 +92,27 @@ export default function Navbar() {
                     <div className="md:hidden py-4 border-t border-white/10">
                         <div className="flex flex-col gap-4">
                             {isLandingPage ? (
-                                NAV_LINKS.map((link) => (
-                                    <a
-                                        key={link.href}
-                                        href={link.href}
-                                        onClick={() => setIsMenuOpen(false)}
-                                        className="text-gray-300 hover:text-white transition-colors text-base font-medium py-2"
-                                    >
-                                        {link.label}
-                                    </a>
-                                ))
+                                NAV_LINKS.map((link) =>
+                                    link.route ? (
+                                        <Link
+                                            key={link.href}
+                                            to={link.href}
+                                            onClick={() => setIsMenuOpen(false)}
+                                            className="text-gray-300 hover:text-white transition-colors text-base font-medium py-2"
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    ) : (
+                                        <a
+                                            key={link.href}
+                                            href={link.href}
+                                            onClick={() => setIsMenuOpen(false)}
+                                            className="text-gray-300 hover:text-white transition-colors text-base font-medium py-2"
+                                        >
+                                            {link.label}
+                                        </a>
+                                    )
+                                )
                             ) : (
                                 <Link
                                     to="/"

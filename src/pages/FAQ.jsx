@@ -21,24 +21,20 @@ export default function FAQ() {
                 {/* FAQ Accordion */}
                 <div className="space-y-4">
                     <AccordionItem
-                        question="When and where is Business Summit 2026?"
-                        answer="Business Summit 2026 will take place on April 18, 2026 at the Convention Center in Downtown Bucharest. Doors open at 8:00 AM for registration and networking breakfast."
-                    />
-                    <AccordionItem
-                        question="How do I register for the event?"
-                        answer="You can register directly on our website by clicking the 'Reserve your seat' button. You'll be directed to our registration form where you can provide your details and secure your spot."
-                    />
-                    <AccordionItem
-                        question="What is included in the registration?"
-                        answer="Your registration includes access to all keynotes, panels, and workshops throughout the day, as well as networking breakfast, lunch, and the closing cocktail hour. You'll also receive event materials and access to exclusive networking opportunities."
+                        question="How do I get a seat?"
+                        answer="The process is simple: just fill out a 2-minute form. We don’t care about your CV; we just want to see that you’re actually interested in tech or building something. If you're a good fit, you'll receive your ticket confirmation via email shortly after."
                     />
                     <AccordionItem
                         question="Is there a dress code?"
-                        answer="We recommend business casual attire. The event is a professional networking opportunity, so dress to impress while remaining comfortable throughout the day."
+                        answer="Business Casual. Wear something you feel comfortable in for a full day of networking, but professional enough to close a deal. No suits required, but leave the hoodies at home."
                     />
                     <AccordionItem
-                        question="Can I get a refund if I can't attend?"
-                        answer="Refund policies depend on when you request the cancellation. Please contact us at info@businesssummit.com for specific details about your registration and refund eligibility."
+                        question="How do I get to the venue? "
+                        answer="TBD"
+                    />
+                    <AccordionItem
+                        question="Who is it for?"
+                        answer="Students and early-stage founders building real projects. Solo creators using AI to run their own marketing and tech operations. Decision makers and investors looking for the next wave of talent."
                     />
                 </div>
 

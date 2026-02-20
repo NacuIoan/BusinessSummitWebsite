@@ -1,9 +1,24 @@
+//Imports
+//Termene.ro, KitKat, LLLDental, VIP, FWDPrint, EA, Launch
+//Romania, Start-up Cafe, IAF, Business Podcast Room 
+import logoTermene from '../assets/logoTermene.svg'
+import logoKitKat from '../assets/logoKitkat.png'
+//import logoLLLDental from 
+//import logoVIP from 
+//import logoFWDPrint from 
+//import logoEA from 
+//import logoLaunchRomania from 
+import logoStartUpCafe from '../assets/logoStartUpCafe.svg'
+//import logoIAF from 
+//import logoBusinessPodcastRoom from 
+
+
 // Event constants - centralized configuration
 export const EVENT = {
     name: 'Business Summit',
     year: 2026,
     city: 'Bucharest',
-    venue: 'Convention Center, Downtown',
+    venue: 'TBD',
     date: '2026-04-18',
     displayDate: 'April 18, 2026',
     ctaText: 'Reserve your seat',
@@ -14,34 +29,34 @@ export const EVENT = {
 export const SPEAKERS = [
     {
         id: 1,
-        name: 'Alexandra Ionescu',
-        role: 'CEO',
-        company: 'TechVentures Global',
-        bio: 'Leading digital transformation across 50+ enterprises with innovative tech solutions.',
+        name: 'TBD',
+        role: 'TBD',
+        company: 'TBD',
+        bio: 'TBD',
         image: null,
     },
     {
         id: 2,
-        name: 'Marcus Chen',
-        role: 'Founder & Managing Partner',
-        company: 'Horizon Capital',
-        bio: 'Invested in over 100 startups with combined valuation exceeding $5 billion.',
+        name: 'TBD',
+        role: 'TBD',
+        company: 'TBD',
+        bio: 'TBD',
         image: null,
     },
     {
         id: 3,
-        name: 'Elena Dragomir',
-        role: 'Chief Innovation Officer',
-        company: 'FutureBank Romania',
-        bio: 'Pioneering fintech solutions that have transformed banking for millions.',
+        name: 'TBD',
+        role: 'TBD',
+        company: 'TBD',
+        bio: 'TBD',
         image: null,
     },
     {
         id: 4,
-        name: 'David Okonkwo',
-        role: 'VP of Strategy',
-        company: 'GlobalScale Industries',
-        bio: 'Scaling businesses from local markets to international success stories.',
+        name: 'TBD',
+        role: 'TBD',
+        company: 'TBD',
+        bio: 'TBD',
         image: null,
     },
 ];
@@ -71,40 +86,46 @@ export const SCHEDULE = [
     },
     {
         time: '13:40 - 14:25',
-        title: '35 Points & Networking Lunch',
+        title: 'Networking Lunch',
         description: '',
         tags: ['Networking', 'Lunch'],
     },
     {
-        time: '14:30 - 15:15',
+        time: '14:30 - 14:45',
+        title: '35 Points',
+        description: '',
+        tags: ['Networking'],
+    },
+    {
+        time: '14:50 - 15:30',
         title: 'Second Panel: Beyond the Culture',
         description:
             'Founders and investors share the raw truth about raising capital and scaling beyond the first round.',
         tags: ['Panel', 'Growth', 'Investment'],
     },
     {
-        time: '15:15 - 15:30',
+        time: '15:30 - 15:45',
         title: 'Keynote: Smart Scaling',
         description:
         'Join Termene.ro to see how real-world data can stress-test your business model before you spend a dime.',
     tags: ['Keynote', 'Growth'],
     },
     {
-    time: '15:35 - 15:50',
+    time: '15:50 - 16:15',
     title: 'Short Meetings: A Different Type of Networking',
     description:
         'Rotational networking designed to help you meet as many relevant people as possible in 15 minutes.',
     tags: ['Networking'],
     },
     {
-        time: '15:55 - 17:00',
+        time: '16:20 - 17:15',
         title: 'Late Night Business Talks',
         description:
             'Relaxed talks and untold stories. A fun segment to discover the human side of success and the failures that shaped it.',
         tags: ['Talks', 'Community'],
     },
     {
-        time: '17:00 - 17:10',
+        time: '17:15 - 17:20',
         title: 'Closing Remarks',
         description:
             'A final thank you to the community and a brief word on the vision behind the Summit and what’s next.',
@@ -143,6 +164,7 @@ export const NAV_LINKS = [
     { label: 'Speakers', href: '#speakers' },
     { label: 'Schedule', href: '#schedule' },
     { label: 'Organizers', href: '#organizers' },
+    { label: 'FAQ', href: '/faq', route: true },
 ];
 
 // Social media links - update these with your actual URLs
@@ -152,3 +174,19 @@ export const SOCIAL_LINKS = {
     linkedin: 'https://linkedin.com/company/businesssummit',
     instagram: 'https://instagram.com/businesssummit',
 };
+
+// Partners data
+//Termene.ro, KitKat, LLLDental, VIP, FWDPrint, EA, Launch
+//Romania, Start-up Cafe, IAF, Business Podcast Room 
+export const PARTNERS = [
+    { id: 1, name: 'Termene.ro', image: logoTermene },
+    { id: 2, name: 'KitKat', image: logoKitKat },
+    { id: 3, name: 'LLLDental', image: null },
+    { id: 4, name: 'VIP Romania', image: null },
+    { id: 5, name: 'FWDPrint', image: null },
+    { id: 6, name: 'The Entrepreneurship Academy', image: null },
+    { id: 7, name: 'Launch Romania', image: null },
+    { id: 8, name: 'Start-up Cafe', image: logoStartUpCafe },
+    { id: 9, name: 'IAF', image: null },
+    { id: 10, name: 'Business Podcast Room', image: null },
+];

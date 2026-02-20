@@ -51,12 +51,21 @@ export default function Footer() {
                         <ul className="space-y-3">
                             {NAV_LINKS.map((link) => (
                                 <li key={link.href}>
-                                    <a
-                                        href={link.href}
-                                        className="text-gray-400 hover:text-white text-sm transition-colors"
-                                    >
-                                        {link.label}
-                                    </a>
+                                    {link.route ? (
+                                        <Link
+                                            to={link.href}
+                                            className="text-gray-400 hover:text-white text-sm transition-colors"
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    ) : (
+                                        <a
+                                            href={link.href}
+                                            className="text-gray-400 hover:text-white text-sm transition-colors"
+                                        >
+                                            {link.label}
+                                        </a>
+                                    )}
                                 </li>
                             ))}
                             <li>
@@ -65,14 +74,6 @@ export default function Footer() {
                                     className="text-gray-400 hover:text-white text-sm transition-colors"
                                 >
                                     Register
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    to="/faq"
-                                    className="text-gray-400 hover:text-white text-sm transition-colors"
-                                >
-                                    FAQ
                                 </Link>
                             </li>
                         </ul>

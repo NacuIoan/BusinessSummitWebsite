@@ -64,7 +64,7 @@ export default function Organizers() {
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
                         {PARTNERS.map((partner) => (
                             <div key={partner.id} className="bg-white rounded-xl p-6 flex flex-col items-center justify-center w-full aspect-square border border-gray-100 hover:shadow-md transition-shadow">
-                                <div className="w-12 h-12 mb-3">
+                                <div className="w-22 h-22 mb-3">
                                     {partner.image ? (
                                         <img src={partner.image} alt={partner.name} className="w-full h-full object-contain" />
                                     ) : (

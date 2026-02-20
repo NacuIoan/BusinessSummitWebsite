@@ -64,11 +64,11 @@ export default function Organizers() {
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
                         {PARTNERS.map((partner) => (
                             <div key={partner.id} className="bg-white rounded-xl p-6 flex flex-col items-center justify-center w-full aspect-square border border-gray-100 hover:shadow-md transition-shadow">
-                                <div className="w-12 h-12 mb-3 opacity-30">
+                                <div className="w-12 h-12 mb-3">
                                     {partner.image ? (
                                         <img src={partner.image} alt={partner.name} className="w-full h-full object-contain" />
                                     ) : (
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                                        <svg className="opacity-30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                                             <path d="M3 21h18M5 21V7l8-4 8 4v14M8 21v-2a2 2 0 012-2h4a2 2 0 012 2v2" />
                                         </svg>
                                     )}

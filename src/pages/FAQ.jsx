@@ -1,10 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 /**
  * FAQ page with accordion-style questions
  */
 export default function FAQ() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <main className="min-h-screen bg-white pt-24 pb-16">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,11 +34,15 @@ export default function FAQ() {
                     />
                     <AccordionItem
                         question="How do I get to the venue? "
-                        answer="TBD"
+                        answer="Business Summit takes place at One United Cotroceni, easily accessible by  metro, or ride-sharing. The nearest metro stations are Academia Militară (5–7 min walk) and Politehnica (10–15 min walk)."
                     />
                     <AccordionItem
-                        question="Who is it for?"
-                        answer="Students and early-stage founders building real projects. Solo creators using AI to run their own marketing and tech operations. Decision makers and investors looking for the next wave of talent."
+                        question="How do I find the right people to talk to?"
+                        answer="We use color-coded wristbands to make networking simple. Your color tells everyone your role immediately: Black is for Founders building projects, White is for Decision Makers and investors, and Orange is for Students looking to connect. This way, you skip the small talk and get straight to the point."
+                    />
+                    <AccordionItem
+                        question="Is there parking available?"
+                        answer="There is no dedicated public parking available at the venue, and street parking in the area is very limited. We strongly recommend using public transport or ride-sharing services to ensure a smooth arrival."
                     />
                 </div>
 

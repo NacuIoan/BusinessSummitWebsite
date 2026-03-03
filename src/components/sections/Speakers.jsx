@@ -1,81 +1,114 @@
+import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { SPEAKERS } from '../../constants/event';
 
 /**
- * Speakers section with speaker cards
- * - Grid layout with circular headshots
- * - Name, role, company, and bio
- * - Social media icons
+ * Speakers section – dark gradient background with horizontally
+ * scrollable speaker cards and a "View All Speakers" CTA.
  */
 export default function Speakers() {
+    const scrollRef = useRef(null);
+
+    const scroll = (direction) => {
+        if (!scrollRef.current) return;
+        const amount = 300;
+        scrollRef.current.scrollBy({
+            left: direction === 'left' ? -amount : amount,
+            behavior: 'smooth',
+        });
+    };
+
     return (
-        <section id="speakers" className="py-16 md:py-24 bg-gray-light">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section
+            id="speakers"
+            className="py-16 md:py-24 relative overflow-hidden bg-gray-light"
+        >
+
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-12 md:mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                         Featured Speakers
                     </h2>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Learn from industry pioneers and thought leaders shaping the future of business.
+                        Meet the industry experts and thought leaders who will share their knowledge and insights
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-                    {SPEAKERS.map((speaker) => (
-                        <SpeakerCard key={speaker.id} {...speaker} />
-                    ))}
+                {/* Scrollable speaker cards */}
+                <div className="relative">
+                    {/* Left arrow */}
+                    <button
+                        onClick={() => scroll('left')}
+                        className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-20 w-10 h-10 rounded-full bg-white shadow-md items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition-colors"
+                        aria-label="Scroll left"
+                    >
+                        <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+
+                    <div ref={scrollRef} className="speakers-scroll gap-5 px-2 py-4">
+                        {SPEAKERS.map((speaker) => (
+                            <SpeakerCard key={speaker.id} {...speaker} />
+                        ))}
+                    </div>
+
+                    {/* Right arrow */}
+                    <button
+                        onClick={() => scroll('right')}
+                        className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-20 w-10 h-10 rounded-full bg-white shadow-md items-center justify-center text-gray-600 hover:bg-accent hover:text-white transition-colors"
+                        aria-label="Scroll right"
+                    >
+                        <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+
+                {/* View All Speakers button */}
+                <div className="text-center mt-10">
+                    <Link
+                        to="/speakers"
+                        className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-white font-semibold rounded-full hover:bg-accent-dark transition-colors"
+                    >
+                        View All Speakers
+                    </Link>
                 </div>
             </div>
         </section>
     );
 }
 
-function SpeakerCard({ name, role, company, bio }) {
-    // Generate initials for placeholder avatar
+function SpeakerCard({ name, role, company, image }) {
     const initials = name
         .split(' ')
         .map((n) => n[0])
         .join('');
 
     return (
-        <div className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-shadow">
-            {/* Avatar placeholder */}
-            <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-accent to-accent-dark rounded-full flex items-center justify-center">
-                <span className="text-2xl font-bold text-white">{initials}</span>
+        <div className="w-52 md:w-56 group">
+            {/* Photo area */}
+            <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-3 bg-gray-100 border border-gray-200 group-hover:border-accent/40 transition-colors">
+                {image ? (
+                    <img
+                        src={image}
+                        alt={name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-accent/30 to-accent-dark/30">
+                        <span className="text-4xl font-bold text-white/60">{initials}</span>
+                    </div>
+                )}
             </div>
-
-            {/* Name and role */}
-            <h3 className="text-lg font-semibold text-gray-900 mb-1">{name}</h3>
-            <p className="text-sm text-accent font-medium mb-1">{role}</p>
-            <p className="text-sm text-gray-500 mb-3">{company}</p>
-
-            {/* Bio */}
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">{bio}</p>
-
-            {/* Social links */}
-            <div className="flex justify-center gap-3">
-                <SocialLink href="#" label="LinkedIn">
-                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" />
-                    </svg>
-                </SocialLink>
-                <SocialLink href="#" label="TikTok">
-                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
-                    </svg>
-                </SocialLink>
-            </div>
+            {/* Name + role */}
+            <h3 className="text-base font-semibold text-gray-900 group-hover:text-accent transition-colors">
+                {name}
+            </h3>
+            <p className="text-sm text-gray-500 mt-0.5">
+                {role} <span className="text-accent">@{company}</span>
+            </p>
         </div>
-    );
-}
-
-function SocialLink({ href, label, children }) {
-    return (
-        <a
-            href={href}
-            aria-label={label}
-            className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-white transition-all"
-        >
-            {children}
-        </a>
     );
 }

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { EVENT, NAV_LINKS, SOCIAL_LINKS } from '../../constants/event';
+import logoBSU from '../../assets/logoBSU-header.svg';
 
 /**
  * Footer component with 3-column layout
@@ -14,7 +15,7 @@ export default function Footer() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
                     {/* About Column */}
                     <div className="sm:col-span-2 lg:col-span-1">
-                        <h3 className="text-xl font-bold mb-4">{EVENT.name}</h3>
+                        <img src={logoBSU} alt={EVENT.name} className="h-10 mb-4" />
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
                             The premier business conference bringing together innovators,
                             leaders, and entrepreneurs to shape the future of business.
@@ -88,15 +89,9 @@ export default function Footer() {
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                                     <path d="M22 6l-10 7L2 6" />
                                 </svg>
-                                <a href="mailto:info@businesssummit.com" className="hover:text-white transition-colors">
-                                    info@businesssummit.com
+                                <a href="mailto:business_summit@vipromania.ro" className="hover:text-white transition-colors">
+                                    business_summit@vipromania.ro
                                 </a>
-                            </li>
-                            <li className="flex items-start gap-2">
-                                <svg className="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-                                </svg>
-                                <span>+40 21 123 4567</span>
                             </li>
                             <li className="flex items-start gap-2">
                                 <svg className="w-5 h-5 mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

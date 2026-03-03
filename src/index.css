@@ -2,13 +2,13 @@
 
 /* Custom theme tokens */
 @theme {
-  --color-accent: #F2500D;
-  --color-accent-light: #FFF5F0;
-  --color-accent-dark: #D14400;
-  --color-dark: #0A0A0A;
-  --color-dark-secondary: #1A1A1A;
-  --color-gray-light: #F5F5F5;
-  --font-family-sans: 'Inter', system-ui, sans-serif;
+  --color-accent: #f2500d;
+  --color-accent-light: #fff5f0;
+  --color-accent-dark: #d14400;
+  --color-dark: #0a0a0a;
+  --color-dark-secondary: #1a1a1a;
+  --color-gray-light: #f5f5f5;
+  --font-family-sans: "Inter", system-ui, sans-serif;
 }
 
 /* Smooth scrolling for anchor links */
@@ -28,4 +28,62 @@ body {
 *:focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
+}
+
+/* Partners carousel */
+@keyframes partners-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.partners-carousel {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+.partners-track {
+  display: flex;
+  width: max-content;
+  animation: partners-scroll 50s linear infinite;
+}
+
+.partners-carousel:hover .partners-track {
+  animation-play-state: paused;
+}
+
+/* Speakers horizontal scroll */
+.speakers-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+}
+
+.speakers-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.speakers-scroll > * {
+  scroll-snap-align: start;
+  flex-shrink: 0;
 }

@@ -22,7 +22,7 @@ export default function BusinessClub() {
             {/* Hero section */}
             <section className="bg-dark pt-24 md:pt-28 pb-16 md:pb-24">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <div className="w-24 h-24 mx-auto mb-6">
+                    <div className="w-36 h-36 mx-auto mb-6">
                         <img src={logoBC} alt="Business Club" className="w-full h-full object-contain" />
                     </div>
                     <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
@@ -102,7 +102,7 @@ export default function BusinessClub() {
                                 <div>
                                     <p className="text-sm text-gray-500">Email</p>
                                     <a href="mailto:hello@businessclub.com" className="text-gray-900 font-medium hover:text-accent transition-colors">
-                                        hello@businessclub.com
+                                        bc@vipromania.ro
                                     </a>
                                 </div>
                             </div>

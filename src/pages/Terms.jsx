@@ -22,7 +22,7 @@ export default function Terms() {
                 {/* Content Card */}
                 <div className="bg-dark-secondary rounded-2xl p-6 md:p-10 text-gray-300 space-y-8">
                     <p className="text-gray-400">
-                        Data ultimei actualizări: 15 aprilie 2025
+                        Data ultimei actualizări: 3 martie 2026
                     </p>
 
                     {/* Section 1 */}
@@ -31,7 +31,7 @@ export default function Terms() {
                             1. Scopul și Acceptarea Termenilor
                         </h2>
                         <p className="leading-relaxed">
-                            Site-ul https://www.businesssummit.com oferă informații despre evenimentele organizate,
+                            Site-ul https://www.businessummit.org oferă informații despre evenimentele organizate,
                             posibilitatea de înregistrare la acestea și acces la resurse relevante pentru participanți.
                             Prin accesarea și utilizarea acestui site, sunteți de acord să respectați și să fiți obligați de
                             acești Termeni și Condiții, precum și de toate legile și reglementările aplicabile. Dacă nu
@@ -47,7 +47,7 @@ export default function Terms() {
                         <ul className="list-disc list-inside space-y-3 ml-4">
                             <li>
                                 <strong className="text-white">Utilizator:</strong> Orice persoană care accesează și utilizează site-ul
-                                https://www.businesssummit.com/
+                                https://www.businessummit.org/
                             </li>
                             <li>
                                 <strong className="text-white">Date cu caracter personal:</strong> Orice informație referitoare la o persoană fizică

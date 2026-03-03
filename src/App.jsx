@@ -6,6 +6,7 @@ import Register from './pages/Register';
 import BusinessClub from './pages/BusinessClub';
 import Terms from './pages/Terms';
 import FAQ from './pages/FAQ';
+import SpeakersPage from './pages/SpeakersPage';
 
 /**
  * Main App component with React Router
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/businessclub" element={<BusinessClub />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/speakers" element={<SpeakersPage />} />
           </Routes>
         </div>
         <Footer />

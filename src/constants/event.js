@@ -1,16 +1,30 @@
 //Imports
 //Termene.ro, KitKat, LLLDental, VIP, FWDPrint, EA, Launch
 //Romania, Start-up Cafe, IAF, Business Podcast Room 
+//SeedBlink, One United Properties, VSFA, Idea Morph
+//MyIdEA, Bursa.ro, Oveit, Exminds, Innovation Labs
 import logoTermene from '../assets/logoTermene.svg'
 import logoKitKat from '../assets/logoKitkat.png'
-//import logoLLLDental from 
-//import logoVIP from 
-//import logoFWDPrint from 
-//import logoEA from 
-//import logoLaunchRomania from 
+import logoLLLDental from '../assets/logoLLLDental.svg'
+import logoVIP from '../assets/logoVIPnegru.svg'
+import logoFWDPrint from '../assets/logoFWDPrint.svg'
+import logoEA from '../assets/logoEA.png'
+import logoLaunchRomania from '../assets/logoLaunch.webp'
 import logoStartUpCafe from '../assets/logoStartUpCafe.svg'
-//import logoIAF from 
-//import logoBusinessPodcastRoom from 
+import logoIAF from '../assets/logoIAF.png'
+import logoBusinessPodcastRoom from '../assets/logoBusinessRoom.png'
+import logoSeedBlink from '../assets/logoSeedBlink.svg'
+//import logoOneUnitedProperties from '../assets/logoOneUnitedProperties.svg'
+import logoVSFA from '../assets/logoVSFA.svg'
+import logoIdeaMorph from '../assets/logoIdeaMorph.png'
+import logoMyIdEA from '../assets/logoMyIdEA.png'
+import logoBursa from '../assets/logoBursa.svg'
+//import logoOveit from '../assets/logoOveit.svg'
+import logoExminds from '../assets/logoExminds.png'
+import logoILabs from '../assets/logoILabs.svg'
+
+//logo for the header
+import logoBSU from '../assets/logoBSU-header.svg'
 
 
 // Event constants - centralized configuration
@@ -18,11 +32,12 @@ export const EVENT = {
     name: 'Business Summit',
     year: 2026,
     city: 'Bucharest',
-    venue: 'TBD',
+    venue: 'One Cotroceni Park',
     date: '2026-04-18',
     displayDate: 'April 18, 2026',
     ctaText: 'Reserve your seat',
     tallyFormUrl: 'https://tally.so/r/ODlrjp',
+    venueMapUrl: 'https://maps.app.goo.gl/WcEMtRzPUv14YYyMA',
 };
 
 // Speakers data
@@ -34,6 +49,10 @@ export const SPEAKERS = [
         company: 'TBD',
         bio: 'TBD',
         image: null,
+        linkedin: '',
+        tiktok: '',
+        longBio: '',
+        topics: [],
     },
     {
         id: 2,
@@ -42,6 +61,10 @@ export const SPEAKERS = [
         company: 'TBD',
         bio: 'TBD',
         image: null,
+        linkedin: '',
+        tiktok: '',
+        longBio: '',
+        topics: [],
     },
     {
         id: 3,
@@ -50,6 +73,10 @@ export const SPEAKERS = [
         company: 'TBD',
         bio: 'TBD',
         image: null,
+        linkedin: '',
+        tiktok: '',
+        longBio: '',
+        topics: [],
     },
     {
         id: 4,
@@ -58,6 +85,58 @@ export const SPEAKERS = [
         company: 'TBD',
         bio: 'TBD',
         image: null,
+        linkedin: '',
+        tiktok: '',
+        longBio: '',
+        topics: [],
+    },
+    {
+        id: 5,
+        name: 'TBD',
+        role: 'TBD',
+        company: 'TBD',
+        bio: 'TBD',
+        image: null,
+        linkedin: '',
+        tiktok: '',
+        longBio: '',
+        topics: [],
+    },
+    {
+        id: 6,
+        name: 'TBD',
+        role: 'TBD',
+        company: 'TBD',
+        bio: 'TBD',
+        image: null,
+        linkedin: '',
+        tiktok: '',
+        longBio: '',
+        topics: [],
+    },
+    {
+        id: 7,
+        name: 'TBD',
+        role: 'TBD',
+        company: 'TBD',
+        bio: 'TBD',
+        image: null,
+        linkedin: '',
+        tiktok: '',
+        longBio: '',
+        topics: [],
+    },
+    {
+        id: 8,
+        name: 'TBD',
+        role: 'TBD',
+        company: 'TBD',
+        bio: 'TBD',
+        image: null,
+        linkedin: '',
+        tiktok: '',
+        longBio: '',
+        topics: [],
     },
 ];
 
@@ -161,7 +240,7 @@ export const FEATURES = [
 // Navigation links
 export const NAV_LINKS = [
     { label: 'About', href: '#about' },
-    { label: 'Speakers', href: '#speakers' },
+    { label: 'Speakers', href: '/speakers', route: true },
     { label: 'Schedule', href: '#schedule' },
     { label: 'Organizers', href: '#organizers' },
     { label: 'FAQ', href: '/faq', route: true },
@@ -178,15 +257,26 @@ export const SOCIAL_LINKS = {
 // Partners data
 //Termene.ro, KitKat, LLLDental, VIP, FWDPrint, EA, Launch
 //Romania, Start-up Cafe, IAF, Business Podcast Room 
+//SeedBlink, One United Properties, VSFA, Idea Morph
+//MyIdEA, Bursa.ro, Oveit, Exminds
 export const PARTNERS = [
-    { id: 1, name: 'Termene.ro', image: logoTermene },
-    { id: 2, name: 'KitKat', image: logoKitKat },
-    { id: 3, name: 'LLLDental', image: null },
-    { id: 4, name: 'VIP Romania', image: null },
-    { id: 5, name: 'FWDPrint', image: null },
-    { id: 6, name: 'The Entrepreneurship Academy', image: null },
-    { id: 7, name: 'Launch Romania', image: null },
-    { id: 8, name: 'Start-up Cafe', image: logoStartUpCafe },
-    { id: 9, name: 'IAF', image: null },
-    { id: 10, name: 'Business Podcast Room', image: null },
+    { id: 1, name: 'Termene.ro', image: logoTermene, url: 'https://termene.ro/articole' },
+    { id: 2, name: 'KitKat', image: logoKitKat, url: 'http://www.kitkat.ro/f1' },
+    { id: 3, name: 'LLLDental', image: logoLLLDental, url: 'https://www.instagram.com/lll.dental/' },
+    { id: 4, name: 'VIP Romania', image: logoVIP, url: 'https://www.vipromania.ro' },
+    { id: 5, name: 'FWDPrint', image: logoFWDPrint, url: 'https://www.fwdprint.com' },
+    { id: 6, name: 'The Entrepreneurship Academy', image: logoEA, url: 'https://entrepreneurship-academy.ro' },
+    { id: 7, name: 'Launch Romania', image: logoLaunchRomania, url: 'https://launch.ro' },
+    { id: 8, name: 'Start-up Cafe', image: logoStartUpCafe, url: 'https://startupcafe.ro' },
+    { id: 9, name: 'Facilitare.ro', image: logoIAF, url: 'https://facilitare.ro' },
+    { id: 10, name: 'Business Podcast Room', image: logoBusinessPodcastRoom, url: 'https://businessroom.ro' },
+    { id: 11, name: 'SeedBlink', image: logoSeedBlink, url: 'https://seedblink.com' },
+    { id: 12, name: 'One United Properties', image: null, url: '' },
+    { id: 13, name: 'VSFA', image: logoVSFA, url: 'https://vsfa.ro' },
+    { id: 14, name: 'Idea Morph', image: logoIdeaMorph, url: 'https://trymorph.com' },
+    { id: 15, name: 'MyIdEA', image: logoMyIdEA, url: 'https://myidea.ro' },
+    { id: 16, name: 'Bursa.ro', image: logoBursa, url: 'https://www.bursa.ro' },
+    { id: 17, name: 'Oveit', image: null, url: '' },
+    { id: 18, name: 'Exminds', image: logoExminds, url: 'https://www.exminds.com/en' },
+    { id: 19, name: 'Innovation Labs', image: logoILabs, url: 'https://www.innovationlabs.ro' }
 ];

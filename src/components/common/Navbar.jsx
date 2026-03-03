@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { EVENT, NAV_LINKS } from '../../constants/event';
+import logoBSU from '../../assets/logoBSU-header.svg';
 import CTAButton from './CTAButton';
 
 /**
@@ -27,9 +28,9 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link
                         to="/"
-                        className="text-white font-bold text-xl md:text-2xl hover:text-accent transition-colors"
+                        className="hover:opacity-80 transition-opacity"
                     >
-                        {EVENT.name}
+                        <img src={logoBSU} alt={EVENT.name} className="h-10 md:h-12 w-auto" />
                     </Link>
 
                     {/* Desktop Navigation */}

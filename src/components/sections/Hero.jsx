@@ -82,7 +82,7 @@ export default function Hero() {
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                             <circle cx="12" cy="10" r="3" />
                         </svg>
-                        <span className="font-medium">{EVENT.venue}, {EVENT.city}</span>
+                        <a href={EVENT.venueMapUrl} target="_blank" rel="noopener noreferrer" className="font-medium underline hover:text-accent transition-colors">{EVENT.venue}, {EVENT.city}</a>
                     </div>
                 </div>
 

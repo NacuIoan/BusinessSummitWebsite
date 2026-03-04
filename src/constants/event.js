@@ -13,7 +13,7 @@ import logoLaunchRomania from '../assets/logoLaunch.webp'
 import logoStartUpCafe from '../assets/logoStartUpCafe.svg'
 import logoIAF from '../assets/logoIAF.png'
 import logoBusinessPodcastRoom from '../assets/logoBusinessRoom.png'
-import logoSeedBlink from '../assets/logoSeedBlink.svg'
+import logoSeedBlink from '../assets/logoSeedblink.svg'
 //import logoOneUnitedProperties from '../assets/logoOneUnitedProperties.svg'
 import logoVSFA from '../assets/logoVSFA.svg'
 import logoIdeaMorph from '../assets/logoIdeaMorph.png'
@@ -25,6 +25,9 @@ import logoILabs from '../assets/logoILabs.svg'
 
 //logo for the header
 import logoBSU from '../assets/logoBSU-header.svg'
+
+//speakers images
+
 
 
 // Event constants - centralized configuration
@@ -137,7 +140,7 @@ export const SPEAKERS = [
         tiktok: '',
         longBio: '',
         topics: [],
-    },
+    }
 ];
 
 // Schedule data

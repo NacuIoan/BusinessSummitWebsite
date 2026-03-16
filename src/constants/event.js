@@ -27,7 +27,15 @@ import logoILabs from '../assets/logoILabs.svg'
 import logoBSU from '../assets/logoBSU-header.svg'
 
 //speakers images
-
+import photoAdrianBanarescu from '../assets/photoAdrianBanarescu.jpeg'
+import photoAlexPadure from '../assets/photoAlexPadure.jpeg'
+import photoRaduMinea from '../assets/photoRaduMinea.jpeg'
+import photoVladIchim from '../assets/photoVladIchim.jpeg'
+import photoBogdanStoian from '../assets/photoBogdanStoian.jpeg'
+import photoCatalinaBanuleasa from '../assets/photoCatalinaBanuleasa.JPG'
+import photoAnaMariaOnica from '../assets/photoAnaMariaOnica.jpeg'
+import photoStefanOlaru from '../assets/photoStefanOlaru.jpeg'
+import photoAlexGavril from '../assets/photoAlexGavril.png'
 
 
 // Event constants - centralized configuration
@@ -43,63 +51,63 @@ export const EVENT = {
     venueMapUrl: 'https://maps.app.goo.gl/WcEMtRzPUv14YYyMA',
 };
 
-// Speakers data
-export const SPEAKERS = [
+    // Speakers data
+    export const SPEAKERS = [
     {
         id: 1,
-        name: 'TBD',
-        role: 'TBD',
-        company: 'TBD',
+        name: 'Adrian Bănărescu',
+        role: 'R&D Director',
+        company: 'Termene.ro',
         bio: 'TBD',
-        image: null,
-        linkedin: '',
+        image: photoAdrianBanarescu,
+        linkedin: 'https://www.linkedin.com/in/adrian-banarescu-37080061/ ',
         tiktok: '',
-        longBio: '',
+        longBio: 'As Director of R&D at Termene.ro, Adrian Bănărescu shapes the strategic direction of Romania’s largest business intelligence platform serving over 120,000 users. His career combines deep academic expertise in macroeconomics with extensive field experience in financial risk assessment and fraud detection. Adrian is dedicated to transforming official data into intelligence that drives business growth while frequently representing the company in high-level B2G relationships and industry forums.',
         topics: [],
     },
     {
         id: 2,
-        name: 'TBD',
-        role: 'TBD',
-        company: 'TBD',
-        bio: 'TBD',
-        image: null,
-        linkedin: '',
+        name: 'Alex Pădure',
+        role: 'Product Owner',
+        company: 'ASSIST Software',
+        bio: 'With a decade in sales & finance, and another 10+ years in gaming/software industry, I am still learning something new every day! Started as a Jr. QA, and so far I have shipped 4 mobile games as Producer (2 for Netflix) and I work on LiveOps now! Also experienced in almost every triple A game from EA. Worked for EA, Amber & Playtika and collaborated with Bioware, PopCap, DICE, Big Fish Games, Scopely, Jam City & Netflix!',
+        image: photoAlexPadure,
+        linkedin: 'https://www.linkedin.com/in/alexandrupadure-producer-productowner/',
         tiktok: '',
         longBio: '',
         topics: [],
     },
     {
         id: 3,
-        name: 'TBD',
-        role: 'TBD',
-        company: 'TBD',
-        bio: 'TBD',
-        image: null,
-        linkedin: '',
+        name: 'Radu Minea',
+        role: 'Product Manager',
+        company: 'eMAG',
+        bio: 'Radu is a Product Manager at eMAG, where he builds the advertising platform, focusing on balancing user experience with platform profitability through data-driven decision-making.He is also a Mentor and Coach at Innovation Labs, Romania’s largest startup pre-accelerator for young founders, and a member of the organizing team at Product Makers, one of the country’s largest technology communities.',
+        image: photoRaduMinea,
+        linkedin: 'https://www.linkedin.com/in/radu-minea/',
         tiktok: '',
         longBio: '',
         topics: [],
     },
     {
         id: 4,
-        name: 'TBD',
-        role: 'TBD',
-        company: 'TBD',
-        bio: 'TBD',
-        image: null,
-        linkedin: '',
+        name: 'Vlad Ichim',
+        role: 'Founder',
+        company: 'BreeStudio',
+        bio: 'Vlad is the Co-Founder of BreeStudio, a project management platform for interior designers. His entry into tech was built on a single realization: in entrepreneurship, the only constant is change. After navigating three major pivots and winning the Future Makers 2023 incubator, Vlad has spent the last four years building software from the ground up, relying on a "bootstrap" mentality and pure curiosity.',
+        image: photoVladIchim,
+        linkedin: 'https://www.linkedin.com/in/vlad--ichim/',
         tiktok: '',
         longBio: '',
         topics: [],
     },
     {
         id: 5,
-        name: 'TBD',
-        role: 'TBD',
-        company: 'TBD',
+        name: 'Bogdan Stoian',
+        role: 'Head of Investment Syndicates',
+        company: 'SeedBlink',
         bio: 'TBD',
-        image: null,
+        image: photoBogdanStoian,
         linkedin: '',
         tiktok: '',
         longBio: '',
@@ -107,41 +115,65 @@ export const SPEAKERS = [
     },
     {
         id: 6,
-        name: 'TBD',
-        role: 'TBD',
-        company: 'TBD',
-        bio: 'TBD',
-        image: null,
-        linkedin: '',
+        name: 'Cătălina Bănuleasa',
+        role: 'Founder',
+        company: 'Idea Morph',
+        bio: 'Catalina Banuleasa is on a mission to democratize innovation and problem-solving, making it possible for companies of all sizes to build products customers truly want. As the founder of Idea Morph, she is transforming how organizations and entrepreneurs turn customer insight into growth, helping teams co-create with customers, clarify priorities faster, and validate solutions before investing time and budget. With a career spanning top global brands like Vodafone, ING Bank, Google, and Electronic Arts — where she led the Romanian UX team for FIFA — Catalina brings deep expertise in product strategy, customer experience, and innovation. She is a certified Google Design Sprint Master, trained at Google’s Mountain View HQ in Design Sprint methodologies and Voice Design. Before launching Idea Morph, Catalina co-founded and scaled Design Thinking Society, a boutique innovation consultancy.',
+        image: photoCatalinaBanuleasa,
+        linkedin: 'https://www.linkedin.com/in/alinacatalina/ ',
         tiktok: '',
         longBio: '',
         topics: [],
     },
     {
         id: 7,
-        name: 'TBD',
-        role: 'TBD',
-        company: 'TBD',
-        bio: 'TBD',
-        image: null,
-        linkedin: '',
+        name: 'AnaMaria Onică',
+        role: 'Program Manager',
+        company: 'MyIdEA',
+        bio: 'AnaMaria Onică is a Program Manager at idEA – The Institute for Excellence in Entrepreneurship, where she works directly with startups and innovative projects to help them scale through acceleration programs, mentoring, and connections with investors and industry experts. In parallel, she is a tech entrepreneur, serving as the COO of a software company and a startup founder, involved in developing scalable digital products and initiatives that support the innovation and entrepreneurship ecosystem.',
+        image: photoAnaMariaOnica,
+        linkedin: 'https://www.linkedin.com/in/anamaria-onică/',
         tiktok: '',
         longBio: '',
         topics: [],
     },
     {
         id: 8,
-        name: 'TBD',
-        role: 'TBD',
-        company: 'TBD',
-        bio: 'TBD',
-        image: null,
+        name: 'Ștefan Olaru',
+        role: 'Moderator',
+        company: 'Business Summit',
+        bio: 'Olaru Ștefan is an entrepreneur who has been building projects since the age of 15, gaining experience across multiple industries, from e-commerce to talent acquisition and recruitment technology. He will serve as the moderator of the upcoming Business Summit, where he aims to guide meaningful conversations between students and industry professionals. He is the co-founder of EarlyHire, a hub that helps students find their first internships and entry-level roles, while also making the hiring process easier and more efficient for companies.',
+        image: photoStefanOlaru,
         linkedin: '',
         tiktok: '',
         longBio: '',
         topics: [],
-    }
-];
+    },
+    {
+    id: 9,
+        name: 'Alex Gavril',
+        role: 'CEO',
+        company: 'Promocrat',
+        bio: 'Alex Gavril, a strong advocate of growth marketing in CEE, helps put regional players on global maps. Alex & ▲promocrat support the local ecosystem flourish through growth marketing, mentoring, education, networking, and direct investment.',
+        image: photoAlexGavril,
+        linkedin: 'https://www.linkedin.com/in/alexgavril/',
+        tiktok: '',
+        longBio: '',
+        topics: [],
+    },
+    {
+    id: 10,
+        name: 'More To Be Announced',
+        role: '',
+        company: 'BusinessSummit',
+        bio: '',
+        image: '',
+        linkedin: '',
+        tiktok: '',
+        longBio: '',
+        topics: [],
+    },
+    ]
 
 // Schedule data
 export const SCHEDULE = [

@@ -19,7 +19,7 @@ import logoVSFA from '../assets/logoVSFA.svg'
 import logoIdeaMorph from '../assets/logoIdeaMorph.png'
 import logoMyIdEA from '../assets/logoMyIdEA.png'
 import logoBursa from '../assets/logoBursa.svg'
-//import logoOveit from '../assets/logoOveit.svg'
+import logoOveit from '../assets/logoOveit.svg'
 import logoExminds from '../assets/logoExminds.png'
 import logoILabs from '../assets/logoILabs.svg'
 
@@ -36,6 +36,9 @@ import photoCatalinaBanuleasa from '../assets/photoCatalinaBanuleasa.JPG'
 import photoAnaMariaOnica from '../assets/photoAnaMariaOnica.jpeg'
 import photoStefanOlaru from '../assets/photoStefanOlaru.jpeg'
 import photoAlexGavril from '../assets/photoAlexGavril.png'
+import photoBogdanJarca from '../assets/photoBogdanJarca.jpg'
+import photoLucianPopovici from '../assets/photoLucianPopovici.jpeg'
+import photoFlorinGrosu from '../assets/photoFlorinGrosu.png'
 
 
 // Event constants - centralized configuration
@@ -106,7 +109,7 @@ export const EVENT = {
         name: 'Bogdan Stoian',
         role: 'Head of Investment Syndicates',
         company: 'SeedBlink',
-        bio: 'TBD',
+        bio: 'Bogdan is Head of Investment Syndicates at SeedBlink. With a legal background and a fintech focus, he works with investors, founders and partners across Europe to source and structure investment deals, building the infrastructure that makes them scale. When it comes to deals, his interest goes beyond tech, spanning consumer, healthcare, real estate and more.',
         image: photoBogdanStoian,
         linkedin: '',
         tiktok: '',
@@ -154,7 +157,7 @@ export const EVENT = {
         name: 'Alex Gavril',
         role: 'CEO',
         company: 'Promocrat',
-        bio: 'Alex Gavril, a strong advocate of growth marketing in CEE, helps put regional players on global maps. Alex & ▲promocrat support the local ecosystem flourish through growth marketing, mentoring, education, networking, and direct investment.',
+        bio: 'Alex Gavril, a strong advocate of growth marketing in CEE, helps put regional players on global maps. Alex & Promocrat support the local ecosystem flourish through growth marketing, mentoring, education, networking, and direct investment.',
         image: photoAlexGavril,
         linkedin: 'https://www.linkedin.com/in/alexgavril/',
         tiktok: '',
@@ -163,16 +166,40 @@ export const EVENT = {
     },
     {
     id: 10,
-        name: 'More To Be Announced',
-        role: '',
-        company: 'BusinessSummit',
-        bio: '',
-        image: '',
-        linkedin: '',
+        name: 'Bogdan Jarcă',
+        role: 'COO',
+        company: 'Realtynno',
+        bio: 'Bogdan Jarcă is building the foundation for a new generation of communities, where real estate evolves from static space into a living, connected environment shaped by technology and experience. His work focuses on transforming complex developments into integrated ecosystems that foster engagement, elevate lifestyle, and create long-term value for all the stakeholders involved. Operating at the intersection of real estate, technology, and community design, he brings a forward-looking perspective on how digital infrastructure is redefining the way people interact with the spaces around them.',
+        image: photoBogdanJarca,
+        linkedin: 'https://www.linkedin.com/in/bogdanjarca/',
         tiktok: '',
         longBio: '',
         topics: [],
     },
+    {
+    id: 11,
+        name: 'Lucian Popovici',
+        role: 'Founder',
+        company: 'Bridging Gaps',
+        bio: 'Lucian started as a software engineer, convinced that if you write good code, things will work. Reality proved otherwise and that became the foundation of his journey into leadership. From leading technology initiatives in Deutsche Bank to building and growing Deloitte Digital in Romania, he has spent years navigating complexity, failure, and reinvention. Today, as the founder of Bridging Gaps, he works with a community of 80+ mentors to help others move faster through the same challenges.He speaks openly about the things that don’t make it into CVs: the mistakes, the doubts, and the moments that actually shape who we become',
+        image: photoLucianPopovici,
+        linkedin: 'https://www.linkedin.com/in/lucianpopovici/',
+        tiktok: '',
+        longBio: '',
+        topics: [],
+    },
+    {
+    id: 12,
+        name: 'Florin Grosu',
+        role: 'Co-Founder',
+        company: 'Traderion',
+        bio: 'Florin is a tech entrepreneur and educator bridging the gap between finance and technology. As Co-founder and COO of Traderion, he leads global operations and business development for a specialized L&D platform serving major financial institutions in the US, UK, and Singapore. An Assistant Professor at the Bucharest University of Economic Studies (ASE), Florin holds a PhD in Management and an MSc in Financial Economics from Gothenburg University, focusing his efforts on mentoring the next generation of Romanian entrepreneurs.',
+        image: photoFlorinGrosu,
+        linkedin: 'https://www.linkedin.com/in/florin-grosu-b1b2594/',
+        tiktok: '',
+        longBio: '',
+        topics: [],
+    }
     ]
 
 // Schedule data
@@ -193,21 +220,21 @@ export const SCHEDULE = [
     },
     {
         time: '13:20 - 13:35',
-        title: 'Keynote: Agents over Employees',
+        title: 'Keynote: AI Agents in Production',
         description:
-            'Learn how to build and manage an entire department using specialized AI agents.',
+            'The Reality of Building, Stress-Testing, and Managing an Autonomous Digital Department.',
     tags: ['Keynote', 'AI'],
     },
     {
         time: '13:40 - 14:25',
-        title: 'Networking Lunch',
+        title: 'Networking Break',
         description: '',
         tags: ['Networking', 'Lunch'],
     },
     {
         time: '14:30 - 14:45',
         title: '35 Points',
-        description: '',
+        description: 'Meet 5 people, compare your "magic words," and decide together how to split the 7 points. Be creative, be fair, and collect all 35 points!',
         tags: ['Networking'],
     },
     {
@@ -311,7 +338,7 @@ export const PARTNERS = [
     { id: 14, name: 'Idea Morph', image: logoIdeaMorph, url: 'https://trymorph.com' },
     { id: 15, name: 'MyIdEA', image: logoMyIdEA, url: 'https://myidea.ro' },
     { id: 16, name: 'Bursa.ro', image: logoBursa, url: 'https://www.bursa.ro' },
-    { id: 17, name: 'Oveit', image: null, url: '' },
+    { id: 17, name: 'Oveit', image: logoOveit, url: 'https://www.oveit.com' },
     { id: 18, name: 'Exminds', image: logoExminds, url: 'https://www.exminds.com/en' },
     { id: 19, name: 'Innovation Labs', image: logoILabs, url: 'https://www.innovationlabs.ro' }
 ];

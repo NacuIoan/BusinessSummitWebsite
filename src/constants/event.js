@@ -111,7 +111,7 @@ export const EVENT = {
         company: 'SeedBlink',
         bio: 'Bogdan is Head of Investment Syndicates at SeedBlink. With a legal background and a fintech focus, he works with investors, founders and partners across Europe to source and structure investment deals, building the infrastructure that makes them scale. When it comes to deals, his interest goes beyond tech, spanning consumer, healthcare, real estate and more.',
         image: photoBogdanStoian,
-        linkedin: '',
+        linkedin: 'https://www.linkedin.com/in/bogdan-stoian-b88a67279/',
         tiktok: '',
         longBio: '',
         topics: [],
@@ -229,7 +229,7 @@ export const SCHEDULE = [
         time: '13:40 - 14:25',
         title: 'Networking Break',
         description: '',
-        tags: ['Networking', 'Lunch'],
+        tags: ['Networking'],
     },
     {
         time: '14:30 - 14:45',

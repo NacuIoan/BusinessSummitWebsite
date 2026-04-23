@@ -14,7 +14,7 @@ import logoStartUpCafe from '../assets/logoStartUpCafe.svg'
 import logoIAF from '../assets/logoIAF.png'
 import logoBusinessPodcastRoom from '../assets/logoBusinessRoom.png'
 import logoSeedBlink from '../assets/logoSeedblink.svg'
-//import logoOneUnitedProperties from '../assets/logoOneUnitedProperties.svg'
+import logoOneUnited from '../assets/logoOneUnited.png'
 import logoVSFA from '../assets/logoVSFA.svg'
 import logoIdeaMorph from '../assets/logoIdeaMorph.png'
 import logoMyIdEA from '../assets/logoMyIdEA.png'
@@ -22,6 +22,7 @@ import logoBursa from '../assets/logoBursa.svg'
 import logoOveit from '../assets/logoOveit.svg'
 import logoExminds from '../assets/logoExminds.png'
 import logoILabs from '../assets/logoILabs.svg'
+import logoPromocrat from '../assets/logoPromocrat.png'
 
 //logo for the header
 import logoBSU from '../assets/logoBSU-header.svg'
@@ -39,6 +40,7 @@ import photoAlexGavril from '../assets/photoAlexGavril.png'
 import photoBogdanJarca from '../assets/photoBogdanJarca.jpg'
 import photoLucianPopovici from '../assets/photoLucianPopovici.jpeg'
 import photoFlorinGrosu from '../assets/photoFlorinGrosu.png'
+import photoBogdanGrigore from '../assets/photoBogdanGrigore.jpg'
 
 
 // Event constants - centralized configuration
@@ -199,6 +201,18 @@ export const EVENT = {
         tiktok: '',
         longBio: '',
         topics: [],
+    },
+    {
+    id: 12,
+        name: 'Bogdan Grigore',
+        role: 'Founder',
+        company: 'Facilitare.ro',
+        bio: 'Bogdan Grigore empowers teams to navigate complex challenges by combining facilitation with the agility of applied improvisation. Through Facilitare.ro, the specialized agency he leads , Bogdan connects organizations with the right experts for their specific challenges. Since 2006, he has helped teams from companies like Apple, Deutsche Bank, ING, and Oracle turn workshops into real opportunities for progress. As the founder of Improvizatie.ro, he introduced business applied improvisation to Romania, helping organizations build leadership skills and team resilience. With 20 years of experience across more than 500 workshops, Bogdan is a driving force in the industry. He elevates the standard of his profession as the Chapter Leader for IAF Romania and shapes future professionals as a Guest Professor at the University of Bucharest',
+        image: photoBogdanGrigore,
+        linkedin: 'https://www.linkedin.com/in/bogdangrigore82/',
+        tiktok: '',
+        longBio: '',
+        topics: [],
     }
     ]
 
@@ -333,12 +347,13 @@ export const PARTNERS = [
     { id: 9, name: 'Facilitare.ro', image: logoIAF, url: 'https://facilitare.ro' },
     { id: 10, name: 'Business Podcast Room', image: logoBusinessPodcastRoom, url: 'https://businessroom.ro' },
     { id: 11, name: 'SeedBlink', image: logoSeedBlink, url: 'https://seedblink.com' },
-    { id: 12, name: 'One United Properties', image: null, url: '' },
+    { id: 12, name: 'One United Properties', image: logoOneUnited, url: 'https://www.one.ro/ro/?&utm_source=google&utm_medium=cpc&utm_campaign=one_general&utm_content=brand&utm_term=src&gad_source=1&gad_campaignid=14880003118&gbraid=0AAAAAByN1rTLzFLTDMUCg5jK8HqkwZd2m&gclid=CjwKCAjwhqfPBhBWEiwAZo196p9zuHkl-myjDdAQQzsPDXZPV4ZRuuXUUg2v085S5-J4AWFw1vn3GxoC1RMQAvD_BwE' },
     { id: 13, name: 'VSFA', image: logoVSFA, url: 'https://vsfa.ro' },
     { id: 14, name: 'Idea Morph', image: logoIdeaMorph, url: 'https://trymorph.com' },
     { id: 15, name: 'MyIdEA', image: logoMyIdEA, url: 'https://myidea.ro' },
     { id: 16, name: 'Bursa.ro', image: logoBursa, url: 'https://www.bursa.ro' },
     { id: 17, name: 'Oveit', image: logoOveit, url: 'https://www.oveit.com' },
     { id: 18, name: 'Exminds', image: logoExminds, url: 'https://www.exminds.com/en' },
-    { id: 19, name: 'Innovation Labs', image: logoILabs, url: 'https://www.innovationlabs.ro' }
+    { id: 19, name: 'Innovation Labs', image: logoILabs, url: 'https://www.innovationlabs.ro' },
+    { id: 20, name: 'Promocrat', image: logoPromocrat, url: 'https://www.promocrat.ro' }
 ];

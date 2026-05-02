@@ -319,6 +319,7 @@ export const NAV_LINKS = [
     { label: 'Speakers', href: '/speakers', route: true },
     { label: 'Schedule', href: '#schedule' },
     { label: 'Organizers', href: '#organizers' },
+    { label: 'Photos', href: 'https://photos.app.goo.gl/h7aWPPFuEyLqmiq5A', external: true },
     { label: 'FAQ', href: '/faq', route: true },
 ];
 

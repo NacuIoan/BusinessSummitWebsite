@@ -50,6 +50,8 @@ export default function Navbar() {
                                     <a
                                         key={link.href}
                                         href={link.href}
+                                        target={link.external ? "_blank" : undefined}
+                                        rel={link.external ? "noopener noreferrer" : undefined}
                                         className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
                                     >
                                         {link.label}
@@ -107,6 +109,8 @@ export default function Navbar() {
                                         <a
                                             key={link.href}
                                             href={link.href}
+                                            target={link.external ? "_blank" : undefined}
+                                            rel={link.external ? "noopener noreferrer" : undefined}
                                             onClick={() => setIsMenuOpen(false)}
                                             className="text-gray-300 hover:text-white transition-colors text-base font-medium py-2"
                                         >
